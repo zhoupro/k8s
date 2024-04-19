@@ -1,0 +1,1 @@
+{"model":"StarCoder-7B","device":"cuda","arch":"x86_64","cpu_info":"Intel(R) Core(TM) i9-14900KF","cpu_count":32,"cuda_devices":["NVIDIA GeForce RTX 4090"],"version":{"build_date":"2024-02-06","build_timestamp":"2024-02-06T20:21:24.197266503Z","git_sha":"9b8c0865de35266d1fb4c206549ef94b97a5f942","git_describe":"v0.8.3"}}

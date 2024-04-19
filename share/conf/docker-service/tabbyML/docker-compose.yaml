@@ -1,0 +1,18 @@
+version: '3.5'
+
+services:
+  tabby:
+    restart: always
+    image: tabbyml/tabby
+    command: serve --model StarCoder-7B --device cuda
+    volumes:
+      - "$HOME/.tabby:/data"
+    ports:
+      - 8080:8080
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]

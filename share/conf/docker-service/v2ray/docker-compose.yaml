@@ -1,0 +1,15 @@
+services:
+  v2raya:
+    image: mzz2017/v2raya
+    container_name: v2raya
+    privileged: true
+    ports:
+      - "2017:2017"
+      - "20170-20172:20170-20172"
+    restart: always
+    environment:
+      - V2RAYA_LOG_FILE=/tmp/v2raya.log
+      - TZ=Asia/Shanghai
+    volumes:
+      - ./v2raya:/etc/v2raya
+      - /etc/localtime:/etc/localtime:ro

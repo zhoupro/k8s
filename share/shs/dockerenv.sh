@@ -37,9 +37,6 @@ function k8s_ins(){
 		sudo apt-get -y install docker-ce
 	fi
 
-    if (( $( which docker-compose | wc -l)==0 )) ;then
-            sudo pip install -U docker-compose
-    fi
 
 # 	if ! dpkg -l | grep -q "kubectl" ; then
 # 		sudo apt-get update && sudo apt-get install -y apt-transport-https
